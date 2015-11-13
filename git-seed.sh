@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/sh
 
 cloneRepo()
 {
@@ -25,5 +25,5 @@ cloneRepo git@gitlab.com:jeffcof/msft-miscellaneous.git ~/miscellaneous
 cloneRepo git@gitlab.com:jeffcof/msft-test.git ~/test
 
 mkdir -p ~/dev/git
-cloneRepo git@github.com:jeffaco/msft-dotfiles.git ~/dev/git/msft-dotfiles
-cloneRepo git@github.com:jeffaco/msft-updatedns.git ~/dev/git/msft-updatedns
+cloneRepo git@github.com:jeffaco/msft-dotfiles.git ~/dev/git/dotfiles
+cloneRepo git@github.com:jeffaco/msft-updatedns.git ~/dev/git/updatedns
