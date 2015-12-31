@@ -10,12 +10,12 @@ cloneRepo()
         exit 1
     fi
 
-    if [ -d $2 ]; then
-        return
+    if [ ! -d $2 ]; then
+        echo "========== Fetching: $1"
+        git clone $1 $2
+    else
+        echo "========== Registering: $1"
     fi
-
-    echo "========== Fetching: $1"
-    git clone $1 $2
 
     mr register $2
 }
