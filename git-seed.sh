@@ -30,6 +30,6 @@ cloneRepo git://myrepos.branchable.com/ ~/dev/git/myrepos
 cloneRepo git@github.com:jeffaco/msft-dotfiles.git ~/dev/git/dotfiles
 cloneRepo git@github.com:jeffaco/msft-updatedns.git ~/dev/git/updatedns
 
-cloneRepo git@github.com:jeffcof/msft-bin.git ~/bin
-cloneRepo git@github.com:jeffcof/msft-miscellaneous.git ~/miscellaneous
-cloneRepo git@github.com:jeffcof/msft-test.git ~/test
+cloneRepo git@github.com:jeffaco/msft-bin.git ~/bin
+cloneRepo git@github.com:jeffaco/msft-miscellaneous.git ~/miscellaneous
+cloneRepo git@github.com:jeffaco/msft-test.git ~/test
