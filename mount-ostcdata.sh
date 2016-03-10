@@ -1,1 +1,1 @@
-sudo mount -o vers=3 ostcnfs-01:/ostcdata /mnt/ostcdata
+sudo mount -o vers=3 wsscnafiler43.redmond.corp.microsoft.com:/OSTCNix /mnt/ostcdata
