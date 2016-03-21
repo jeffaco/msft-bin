@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 cloneRepo()
 {
@@ -17,7 +17,7 @@ cloneRepo()
         echo "========== Registering: $1"
     fi
 
-    mr register $2
+    ~/dev/git/myrepos/mr register $2
 }
 
 # Seed initial clone repositories
