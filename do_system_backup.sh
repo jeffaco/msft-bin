@@ -5,8 +5,9 @@ cd ~/
 # Don't back up stuff from git repositories (but include enough to re-seed git)
 
 tar czvhf /tmp/base-backup.tar.gz \
-    --exclude .rbenv --exclude base-backup.tar.gz --exclude dev --exclude pbuild_logs \
-    --exclude bin/.git --exclude miscellaneous/.git --exclude test/.git \
+    --exclude .rbenv --exclude base-backup.tar.gz \
+    --exclude bin --exclude dev --exclude miscellaneous --exclude pbuild_logs \
+    --exclude test --exclude .microsoft \
     .
 
 
