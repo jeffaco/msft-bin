@@ -17,19 +17,18 @@ cloneRepo()
         echo "========== Registering: $1"
     fi
 
-    ~/dev/git/myrepos/mr register $2
+    ~/dev/myrepos/mr register $2
 }
 
 # Seed initial clone repositories
 # (Grab mr first so we can register everything)
 
-export PATH=~/dev/git/myrepos:$PATH
+export PATH=~/dev/myrepos:$PATH
 
-mkdir -p ~/dev/git
-cloneRepo git://myrepos.branchable.com/ ~/dev/git/myrepos
-cloneRepo git@github.com:jeffaco/msft-dotfiles.git ~/dev/git/dotfiles
-cloneRepo git@github.com:jeffaco/msft-updatedns.git ~/dev/git/updatedns
+mkdir -p ~/dev
+cloneRepo git://myrepos.branchable.com/ ~/dev/myrepos
+cloneRepo git@github.com:jeffaco/msft-dotfiles.git ~/dev/dotfiles
 
 cloneRepo git@github.com:jeffaco/msft-bin.git ~/bin
-cloneRepo git@github.com:jeffaco/msft-miscellaneous.git ~/miscellaneous
-cloneRepo git@github.com:jeffaco/msft-test.git ~/test
+#cloneRepo git@github.com:jeffaco/msft-miscellaneous.git ~/miscellaneous
+#cloneRepo git@github.com:jeffaco/msft-test.git ~/test
