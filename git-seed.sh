@@ -27,8 +27,11 @@ export PATH=~/dev/myrepos:$PATH
 
 mkdir -p ~/dev
 cloneRepo git://myrepos.branchable.com/ ~/dev/myrepos
-cloneRepo git@github.com:jeffaco/msft-dotfiles.git ~/dev/dotfiles
-
 cloneRepo git@github.com:jeffaco/msft-bin.git ~/bin
+cloneRepo git@github.com:jeffaco/msft-dotfiles.git ~/dev/dotfiles
+cloneRepo ssh://msazure@vs-ssh.visualstudio.com/DefaultCollection/O\
+ne/_ssh/Compute-AzLinux-HanaRp ~/dev/hanarp
+cloneRepo git@github.com:jeffaco/msft-bin.git ~/bin
+
 #cloneRepo git@github.com:jeffaco/msft-miscellaneous.git ~/miscellaneous
 #cloneRepo git@github.com:jeffaco/msft-test.git ~/test
