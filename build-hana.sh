@@ -21,6 +21,7 @@ if [ $# -gt 0 ]; then
 	IMAGES="$(docker images -q)"
 	[ -n "$IMAGES" ] && docker rmi -f $IMAGES
 
+	echo
 	exit 0
     fi
 
