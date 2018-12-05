@@ -42,12 +42,20 @@ fi
 echo "#################### Verifying docker container ####################"
 scripts/devenv.sh
 
-echo
-echo "#################### Performing build/unit tests ####################"
-./build/build.sh -K
+case $OS in
+    Darwin)
+        echo
+        echo "#################### Performing build/unit tests ####################"
+        ./build/build.sh -SK
+        ;;
 
-if [ $OS = "Linux" ]; then
-    echo
-    echo "#################### Running BVT tests ####################"
-    ./bvt/hanarp/runTests.sh 
-fi
+    Linux)
+        echo
+        echo "#################### Performing build/unit tests ####################"
+        ./build/build.sh -K
+
+        echo
+        echo "#################### Running BVT tests ####################"
+        ./bvt/hanarp/runTests.sh
+        ;;
+esac
