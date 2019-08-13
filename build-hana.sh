@@ -52,7 +52,8 @@ case $OS in
     Linux)
         echo
         echo "#################### Performing build/unit tests ####################"
-        ./build/build.sh
+        # Build with -S until SQL unit tests are more stable
+        ./build/build.sh -S
 
         echo
         echo "#################### Running BVT tests ####################"
