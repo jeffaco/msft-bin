@@ -46,13 +46,13 @@ case $OS in
     Darwin)
         echo
         echo "#################### Performing build/unit tests ####################"
-        ./build/build.sh -SK
+        ./build/build.sh -S
         ;;
 
     Linux)
         echo
         echo "#################### Performing build/unit tests ####################"
-        ./build/build.sh -K
+        ./build/build.sh
 
         echo
         echo "#################### Running BVT tests ####################"
